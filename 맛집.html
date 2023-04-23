@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>근처 음식점</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        th {
+            background-image: url("column-image.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #im {
+            width: 150px;
+            height: 150px;
+            transition: transform 0.5s ease;
+        }
+        
+        #im:hover {
+            transform: scale(1.2);
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            align-items: center;
+        }
+        #title {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            border: none;
+          }
+          
+        #head {
+            display: inline-block;
+            font-size: 70px;
+            font-weight: bold;
+            text-align: center;
+            color: #0E4A84; 
+        
+        }
+
+        
+
+        .button {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #button1 ,#button3{
+            width: 150px;
+            height: 70px;
+            font-size: 19px;
+            cursor: pointer;
+            background-color: #0E4A84;
+            color: white;
+        }
+        #button2 {
+            width: 150px;
+            height: 70px;
+            font-size: 19px;
+            cursor: pointer;
+            background-color: white;
+            color: #0E4A84;
+        }
+        #button4 {
+            width: 150px;
+            height: 70px;
+            font-size: 19px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+        #button5
+        {
+            width: 150px;
+            height: 70px;
+            font-size: 19px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            display: block;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <img id="title" src="제목.png" alt="이미지">
+
+   <br>
+   <br>
+    
+    <div class="button">
+        <button id="button1"> <strong>학교 포탈</strong> <br> 안내</button>
+        <button id="button2"><strong>근처<br>음식점</strong></button>  
+        <button id="button3"><strong>카공하기 좋은<br>카페</strong></button>
+        <button id="button4"><strong>근처 놀거리</strong></button>
+    </div>
+    <br>
+    <br>
+   
+    <table>
+        <tr>
+            <th></th>
+            <th>이름</th>
+            <th>운영시간</th>
+            <th>장소</th>
+            <th>추천메뉴</th>
+        </tr>
+        <tr>
+            <td><img id="im" src="돈가스 전원.png" alt=""></td>
+            <td>돈까스 전원</td>
+            <td>평일 11:20-20:30 (브레이크 타임 15:00-17:00) <br> 토요일 11:20-15:00</td>
+            <td><a href="https://naver.me/5PS2RjWv">서울 성동구 왕십리로24길 13 돈까스전원</a></td>
+            <td>
+                <ul>
+                <li>안심돈가스 정식</li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+            <td><img id="im" src="돈가스 전원.png" alt=""></td>
+            <td>맛집2</td>
+            <td>맛집2 운영시간</td>
+            <td><a href="네이버지도 링크">맛집2 장소</a></td>
+            <td>
+                <ul>
+                <li>추천메뉴1</li>
+                <li>추천메뉴2</li>
+                <li>추천메뉴3</li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+            <td><img id="im" src="돈가스 전원.png" alt=""></td>
+            <td>맛집2</td>
+            <td>맛집3 운영시간</td>
+            <td><a href="네이버지도 링크">맛집3 장소</a></td>
+            <td>
+                <ul>
+                <li>추천메뉴1</li>
+                <li>추천메뉴2</li>
+                <li>추천메뉴3</li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+            <td><img id="im" src="돈가스 전원.png" alt=""></td>
+            <td>맛집4</td>
+            <td>맛집4 운영시간</td>
+            <td><a href="네이버지도 링크">맛집4 장소</a></td>
+            <td>
+                <ul>
+                <li>추천메뉴1</li>
+                <li>추천메뉴2</li>
+                <li>추천메뉴3</li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+            <td><img id="im" src="돈가스 전원.png" alt=""></td>
+            <td>맛집5</td>
+            <td>맛집5 운영시간</td>
+            <td><a href="네이버지도 링크">맛집5 장소</a></td>
+            <td>
+                <ul>
+                <li>추천메뉴1</li>
+                <li>추천메뉴2</li>
+                <li>추천메뉴3</li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+            <td><img id="im" src="돈가스 전원.png" alt=""></td>
+            <td>맛집6</td>
+            <td>맛집6 운영시간</td>
+            <td><a href="네이버지도 링크">맛집6 장소</a></td>
+            <td>
+                <ul>
+                <li>추천메뉴1</li>
+                <li>추천메뉴2</li>
+                <li>추천메뉴3</li>
+            </ul>
+        </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    
+    <button id="button5"><strong>메인화면</strong></button>
+
+    <script>
+        // JavaScript 
+        document.getElementById("button1").addEventListener("click", function() {
+            window.location.href = "포탈.html";
+        });
+        document.getElementById("button2").addEventListener("click", function() {
+            window.location.href = "맛집.html";
+        });
+        document.getElementById("button3").addEventListener("click", function() {
+            window.location.href = "카페.html";
+        });
+        document.getElementById("button4").addEventListener("click", function() {
+            window.location.href = "놀거리";
+        });
+        document.getElementById("button5").addEventListener("click", function() {
+            window.location.href = "main.html";
+        });
+    </script>
+</body>
+</html>

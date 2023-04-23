@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>놀거리</title>
+        <style>
+
+            body {
+                font-family: Arial, sans-serif;
+                align-items: center;
+            }
+            #title {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                border: none;
+            }
+
+            #head {
+                display: inline-block;
+                font-size: 70px;
+                font-weight: bold;
+                text-align: center;
+                color: #0E4A84;
+
+            }
+
+            .button {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            #button1,
+            #button3 {
+                width: 150px;
+                height: 70px;
+                font-size: 19px;
+                cursor: pointer;
+                background-color: #0E4A84;
+                color: white;
+            }
+            #button2 {
+                width: 150px;
+                height: 70px;
+                font-size: 19px;
+                cursor: pointer;
+                background-color: white;
+                color: #0E4A84;
+            }
+            #button4 {
+                width: 150px;
+                height: 70px;
+                font-size: 19px;
+                cursor: pointer;
+                background-color: black;
+                color: white;
+            }
+            #button5 {
+                width: 150px;
+                height: 70px;
+                font-size: 19px;
+                cursor: pointer;
+                background-color: black;
+                color: white;
+                display: block;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="title" src="제목.png" alt="이미지">
+
+        <br>
+        <br>
+
+        <div class="button">
+            <button id="button1">
+                <strong>학교 포탈</strong>
+                <br>
+                안내</button>
+            <button id="button2">
+                <strong>근처<br>음식점</strong>
+            </button>
+            <button id="button3">
+                <strong>카공하기 좋은<br>카페</strong>
+            </button>
+            <button id="button4">
+                <strong>근처 놀거리</strong>
+            </button>
+        </div>
+        <br>
+        <br>
+          <img src="map.jpeg" alt="">
+        <br>
+        <br>
+
+        <button id="button5">
+            <strong>메인화면</strong>
+        </button>
+
+        <script>
+            // JavaScript
+            document
+                .getElementById("button1")
+                .addEventListener("click", function () {
+                    window.location.href = "포탈.html";
+                });
+            document
+                .getElementById("button2")
+                .addEventListener("click", function () {
+                    window.location.href = "맛집.html";
+                });
+            document
+                .getElementById("button3")
+                .addEventListener("click", function () {
+                    window.location.href = "각자 html 주소.html";
+                });
+            document
+                .getElementById("button4")
+                .addEventListener("click", function () {
+                    window.location.href = "놀거리.html";
+                });
+            document
+                .getElementById("button5")
+                .addEventListener("click", function () {
+                    window.location.href = "main.html";
+                });
+        </script>
+    </body>
+</html>

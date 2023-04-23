@@ -1,10 +1,11 @@
-<!-- 이미지 저작권 이슈 확인하기. -->
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>한양대 새내기를 위한 정보</title>
+    <title>카공하기 좋은 카페</title>
     <style>
+      
+
         body {
             font-family: Arial, sans-serif;
             align-items: center;
@@ -28,6 +29,7 @@
         }
 
         
+
         .button {
             display: flex;
             flex-wrap: wrap;
@@ -59,16 +61,22 @@
             background-color: black;
             color: white;
         }
-        #map {
-                display: block;
-                margin: auto;
-              }
-            
+        #button5
+        {
+            width: 150px;
+            height: 70px;
+            font-size: 19px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            display: block;
+            margin: auto;
+        }
+
     </style>
 </head>
-
 <body>
-   <img id="title" src="제목.png" alt="이미지">
+    <img id="title" src="제목.png" alt="이미지">
 
    <br>
    <br>
@@ -81,8 +89,16 @@
     </div>
     <br>
     <br>
+   
+   
+
+
+
+
     <br>
-    <img id="map" src="map.jpeg" alt="이미지">
+    <br>
+    
+    <button id="button5"><strong>메인화면</strong></button>
 
     <script>
         // JavaScript 
@@ -98,7 +114,9 @@
         document.getElementById("button4").addEventListener("click", function() {
             window.location.href = "놀거리.html";
         });
+        document.getElementById("button5").addEventListener("click", function() {
+            window.location.href = "main.html";
+        });
     </script>
-
 </body>
 </html>
