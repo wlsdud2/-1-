@@ -1,104 +1,113 @@
 <!-- 이미지 저작권 이슈 확인하기. -->
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>한양대 새내기를 위한 정보</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            align-items: center;
-        }
-        #title {
-            display: block;
-            width: 100%;
-            height: auto;
-            margin: 0;
-            padding: 0;
-            border: none;
-          }
-          
-        #head {
-            display: inline-block;
-            font-size: 70px;
-            font-weight: bold;
-            text-align: center;
-            color: #0E4A84; 
-        
-        }
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
 
-        
-        .button {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
+      #title {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
 
-        #button1 ,#button3{
-            width: 150px;
-            height: 70px;
-            font-size: 19px;
-            cursor: pointer;
-            background-color: #0E4A84;
-            color: white;
-        }
-        #button2 {
-            width: 150px;
-            height: 70px;
-            font-size: 19px;
-            cursor: pointer;
-            background-color: white;
-            color: #0E4A84;
-        }
-        #button4 {
-            width: 150px;
-            height: 70px;
-            font-size: 19px;
-            cursor: pointer;
-            background-color: black;
-            color: white;
-        }
-        #map {
-                display: block;
-                margin: auto;
-              }
-            
+      h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: #0E4A84;
+        margin: 0;
+        padding: 0;
+      }
+
+      .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      button {
+        justify-content: center;
+        width: 200px;
+        height: 80px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+        color: white;
+        transition: background-color 0.3s ease;
+      }
+
+      #button1 {
+        background-color: #0E4A84;
+      }
+
+      #button2 {
+        background-color: white;
+        color: #0E4A84;
+        border: 2px solid #0E4A84;
+      }
+
+      #button3 {
+        background-color: #0E4A84;
+      }
+
+      #button4 {
+        background-color: black;
+      }
+
+      #map {
+        max-width: 800px;
+        margin-top: 50px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-   <img id="title" src="제목.png" alt="이미지">
+  <body>
+    <img id="title" src="제목.png" alt="이미지">
 
-   <br>
-   <br>
-    
-    <div class="button">
-        <button id="button1"> <strong>학교 포탈</strong> <br> 안내</button>
-        <button id="button2"><strong>근처<br>음식점</strong></button>  
-        <button id="button3"><strong>카공하기 좋은<br>카페</strong></button>
-        <button id="button4"><strong>근처 놀거리</strong></button>
+
+    <div class="button-container">
+      <button id="button1">학교 포탈 안내</button>
+      <button id="button2">근처 음식점</button>  
+      <button id="button3">카공하기 좋은 카페</button>
+      <button id="button4">근처 놀거리</button>
     </div>
-    <br>
-    <br>
-    <br>
+
     <img id="map" src="map.jpeg" alt="이미지">
 
     <script>
-        // JavaScript 
-        document.getElementById("button1").addEventListener("click", function() {
-            window.location.href = "포탈.html";
-        });
-        document.getElementById("button2").addEventListener("click", function() {
-            window.location.href = "맛집.html";
-        });
-        document.getElementById("button3").addEventListener("click", function() {
-            window.location.href = "카페.html";
-        });
-        document.getElementById("button4").addEventListener("click", function() {
-            window.location.href = "놀거리.html";
-        });
-    </script>
+      document.getElementById("button1").addEventListener("click", function() {
+        window.location.href = "포탈.html";
+      });
 
-</body>
+      document.getElementById("button2").addEventListener("click", function() {
+        window.location.href = "맛집.html";
+      });
+
+      document.getElementById("button3").addEventListener("click", function() {
+        window.location.href = "카페.html";
+      });
+
+      document.getElementById("button4").addEventListener("click", function() {
+        window.location.href = "놀거리.html";
+      });
+    </script>
+  </body>
 </html>
