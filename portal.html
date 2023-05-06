@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>카공하기 좋은 카페</title>
+    <title>학교 포탈</title>
     <style>
       
 
@@ -28,7 +28,6 @@
         
         }
 
-        
         .button-container {
             display: flex;
             flex-wrap: wrap;
@@ -77,15 +76,15 @@
             color: white;
            
         }
+
     </style>
 </head>
 <body>
-    <img id="title" src="제목.png" alt="이미지">
+    <img id="title" src="title.png" alt="이미지">
 
    <br>
    <br>
     
-     
    <div class="button-container">
     <button id="button1">학교 포탈 안내</button>
     <button id="button2">근처 음식점</button>  
@@ -96,7 +95,7 @@
     <br>
     <br>
    
-  
+    <img src="map.jpeg" alt="">
 
 
     <br>
@@ -104,19 +103,20 @@
     <div class="button-container">
     <button id="button5">메인화면</button>
     </div>
+    
     <script>
         // JavaScript 
         document.getElementById("button1").addEventListener("click", function() {
-            window.location.href = "포탈.html";
+            window.location.href = "portal.html";
         });
         document.getElementById("button2").addEventListener("click", function() {
-            window.location.href = "맛집.html";
+            window.location.href = "restaurant.html";
         });
         document.getElementById("button3").addEventListener("click", function() {
-            window.location.href = "카페.html";
+            window.location.href = "cafe.html";
         });
         document.getElementById("button4").addEventListener("click", function() {
-            window.location.href = "놀거리.html";
+            window.location.href = "play.html";
         });
         document.getElementById("button5").addEventListener("click", function() {
             window.location.href = "main.html";
