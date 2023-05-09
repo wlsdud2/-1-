@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>카공하기 좋은 카페</title>
+    <title>근처 카페</title>
     <style>
-      
-
         body {
             font-family: Arial, sans-serif;
             align-items: center;
         }
+
         #title {
             display: block;
             width: 100%;
@@ -17,26 +16,24 @@
             margin: 0;
             padding: 0;
             border: none;
-          }
-          
+        }
+
         #head {
             display: inline-block;
             font-size: 70px;
             font-weight: bold;
             text-align: center;
-            color: #0E4A84; 
-        
+            color: #0E4A84;
         }
 
-        
         .button-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 50px;
-          }
-    
-          button {
+        }
+
+        button {
             justify-content: center;
             width: 200px;
             height: 80px;
@@ -48,64 +45,114 @@
             margin: 10px;
             color: white;
             transition: background-color 0.3s ease;
-          }
-    
-          #button1 {
+        }
+
+        #button1 {
             background-color: #0E4A84;
-          }
-    
-          #button2 {
+        }
+
+        #button2 {
             background-color: white;
             color: #0E4A84;
             border: 2px solid #0E4A84;
-          }
-    
-          #button3 {
-            background-color: #0E4A84;
-          }
-    
-          #button4 {
-            background-color: black;
-          }
+        }
 
-        
-    
-        #button5
-        {
-           
+        #button3 {
+            background-color: #0E4A84;
+        }
+
+        #button4 {
+            background-color: black;
+        }
+
+        #button5 {
             background-color: black;
             color: white;
-           
+        }
+
+        .container {
+            position: relative;
+            width: 500px; /* 이미지의 가로 크기에 맞게 조정 */
+            height: 500px; /* 이미지의 세로 크기에 맞게 조정 */
+        }
+
+        .pin {
+            position: absolute;
+            width: 40px;
+            height: 50px;
+        }
+
+        .pin1 {
+            top: 610px;
+            left: 870px;
+        }
+
+        .pin2 {
+            top: 800px;
+            left: 596px;
+        }
+
+        .pin3 {
+            top: 550px;
+            left: 450px;
+        }
+
+        .pin4 {
+            top: 250px;
+            left: 690px;
+        }
+
+        .cafe-info {
+            float: left;
+            width: 400px;
+            height: 300px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .cafe-info iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 <body>
     <img id="title" src="title.png" alt="이미지">
 
-   <br>
-   <br>
-    
-     
-   <div class="button-container">
-    <button id="button1">학교 포탈 안내</button>
-    <button id="button2">근처 음식점</button>  
-    <button id="button3">카공하기 좋은 카페</button>
-    <button id="button4">근처 놀거리</button>
-   
-  </div>
     <br>
     <br>
-   
-  
 
+    <div class="button-container">
+        <button id="button1">학교 포탈 안내</button>
+        <button id="button2">근처 음식점</button>
+        <button id="button3">카공하기 좋은 카페</button>
+       
+        <button id="button4">근처 놀거리</button>
+    </div>
+    <br>
+    <br>
+   
+    <div class="container">
+        <img src="map.jpeg" alt="Map Image">
+        <img class="pin pin1" src="pin.png" alt="Pin Image">
+        <img class="pin pin2" src="pin.png" alt="Pin Image">
+        <img class="pin pin3" src="pin.png" alt="Pin Image">
+        <img class="pin pin4" src="pin.png" alt="Pin Image">
+        <div class="cafe-info">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
 
     <br>
     <br>
     <div class="button-container">
-    <button id="button5">메인화면</button>
+        <button id="button5">메인화면</button>
     </div>
+    
     <script>
-        // JavaScript 
         document.getElementById("button1").addEventListener("click", function() {
             window.location.href = "portal.html";
         });
@@ -120,6 +167,19 @@
         });
         document.getElementById("button5").addEventListener("click", function() {
             window.location.href = "main.html";
+        });
+        
+        const pins = document.querySelectorAll('.pin');
+        const cafeInfo = document.querySelector('.cafe-info');
+        const iframe = cafeInfo.querySelector('iframe');
+        
+        pins.forEach(function(pin, index) {
+            pin.addEventListener('click', function() {
+                // 카페 정보가 나타나게 함
+                cafeInfo.style.display = 'block';
+                // 해당 카페 정보를 로드함
+                iframe.src = `cafe_info${index + 1}.html`;
+            });
         });
     </script>
 </body>
