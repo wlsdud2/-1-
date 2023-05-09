@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>근처 음식점</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        th {
+            background-image: url("column-image.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #im {
+            width: 150px;
+            height: 150px;
+            transition: transform 0.5s ease;
+        }
+        
+        #im:hover {
+            transform: scale(1.2);
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            align-items: center;
+        }
+        #title {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            border: none;
+          }
+          
+        #head {
+            display: inline-block;
+            font-size: 70px;
+            font-weight: bold;
+            text-align: center;
+            color: #0E4A84; 
+        
+        }
+
+      
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+          }
+    
+          button {
+            justify-content: center;
+            width: 200px;
+            height: 80px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            color: white;
+            transition: background-color 0.3s ease;
+          }
+    
+          #button1 {
+            background-color: #0E4A84;
+          }
+    
+          #button2 {
+            background-color: white;
+            color: #0E4A84;
+            border: 2px solid #0E4A84;
+          }
+    
+          #button3 {
+            background-color: #0E4A84;
+          }
+    
+          #button4 {
+            background-color: black;
+          }
+
+        
+    
+        #button5
+        {
+           
+            background-color: black;
+            color: white;
+           
+        }
+
+        li {
+          font-size: 80%;
+        }
+    </style>
+</head>
+<body>
+    <img id="title" src="제목.png" alt="이미지">
+
+   <br>
+   <br>
+    
+   <div class="button-container">
+    <button id="button1">학교 포탈 안내</button>
+    <button id="button2">근처 음식점</button>  
+    <button id="button3">교내 카페</button>
+    <button id="button4">근처 놀거리</button>
+   
+  </div>
+    <br>
+    <br>
+   
+    <table>
+        <tr>
+            <th></th>
+            <th>이름</th>
+            <th>운영시간</th>
+            <th>장소</th>
+            <th>팁</th>
+        </tr>
+        <tr>
+            <td><img id="im" src="블루포트.PNG" alt=""></td>
+            <td>블루포트 한양사이버대점</td>
+            <td>평일 오전 08:00-19:00 <br> 토요일 08:00-17:00 <br> 일요일 휴무 </td>
+            <td><a href="https://naver.me/Fye4HCt9"> 사이버2관 1층 농그코트와 테니스장 옆 </a></td>
+            <td>
+                <ul>
+                <li> 시크릿오더로 주문하면 쿠폰을 받을 수 있다 </li>
+                <li> 넓기 때문에 카공하기도 좋다 </li>
+                <li> 요거트스무디 종류는 무척 맛있다 (특히 키위요거트스무디) </li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+            <td><img id="im" src="ㄹㄹ.png" alt="더베이크"></td>
+            <td>더베이크 한양대역점</td>
+            <td>평일 07:00-19:00 <br> 주말 휴무</td>
+            <td><a href="https://naver.me/GJvfgYX7"> 한양대역사 내 2번 출구 방면 </a></td>
+            <td>
+                <ul>
+                <li> 솔티버터롤은 갓 나왔을 때 먹으면 무척 맛있다 </li>
+                <li> 아이스티와 아이스 아메리카노가 혜자다 </li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+            <td><img id="im" src="ㄹㄹ.png" alt="카페3"></td>
+            <td>카페3</td>
+            <td>키페3 운영시간</td>
+            <td><a href="네이버지도 링크"> 카페3 장소</a></td>
+            <td>
+                <ul>
+                <li>팁1</li>
+                <li>팁2</li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+            <td><img id="im" src="ㄹㄹ.png" alt="카페4"></td>
+            <td>카페4</td>
+            <td>카페4 운영시간</td>
+            <td><a href="네이버지도 링크">카페4 장소</a></td>
+            <td>
+                <ul>
+                <li>팁1</li>
+                <li>팁2</li>
+            </ul>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <div class="button-container">
+        <button id="button5">메인화면</button>
+        </div>
+
+    <script>
+        // JavaScript 
+        document.getElementById("button1").addEventListener("click", function() {
+            window.location.href = "포탈.html";
+        });
+        document.getElementById("button2").addEventListener("click", function() {
+            window.location.href = "맛집.html";
+        });
+        document.getElementById("button3").addEventListener("click", function() {
+            window.location.href = "카페.html";
+        });
+        document.getElementById("button4").addEventListener("click", function() {
+            window.location.href = "놀거리";
+        });
+        document.getElementById("button5").addEventListener("click", function() {
+            window.location.href = "main.html";
+        });
+    </script>
+</body>
+</html>
