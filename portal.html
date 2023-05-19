@@ -2,79 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>학교 포탈</title>
+    <title>포탈 소개</title>
+    <link rel="stylesheet" type="text/css" href="standard.css">
     <style>
-      
 
-        body {
-            font-family: Arial, sans-serif;
-            align-items: center;
-        }
-        #title {
-            display: block;
-            width: 100%;
-            height: auto;
-            margin: 0;
-            padding: 0;
-            border: none;
-          }
-          
-        #head {
-            display: inline-block;
-            font-size: 70px;
-            font-weight: bold;
-            text-align: center;
-            color: #0E4A84; 
-        
+        .container {
+            position: relative;
+            width: 500px; /* 이미지의 가로 크기에 맞게 조정 */
+            height: 500px; /* 이미지의 세로 크기에 맞게 조정 */
         }
 
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 50px;
-          }
-    
-          button {
-            justify-content: center;
-            width: 200px;
-            height: 80px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            margin: 10px;
-            color: white;
-            transition: background-color 0.3s ease;
-          }
-    
-          #button1 {
-            background-color: #0E4A84;
-          }
-    
-          #button2 {
-            background-color: white;
-            color: #0E4A84;
-            border: 2px solid #0E4A84;
-          }
-    
-          #button3 {
-            background-color: #0E4A84;
-          }
-    
-          #button4 {
-            background-color: black;
-          }
+        .num {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            transition: transform 0.5s ease;
+        }
+        .num:hover {
+          transform: scale(1.2);
+      }
 
-        
-    
-        #button5
-        {
-           
-            background-color: black;
-            color: white;
-           
+        .num1 {
+            top: 530px;
+            left: 930px;
+        }
+
+        .num2 {
+            top: 630px;
+            left:980px;
+        }
+
+        .num3 {
+            top: 700px;
+            left: 490px;
+        }
+
+        .num4 {
+            top: 640px;
+            left: 150px;
         }
 
     </style>
@@ -82,30 +47,31 @@
 <body>
     <img id="title" src="title.png" alt="이미지">
 
-   <br>
-   <br>
-    
-   <div class="button-container">
-    <button id="button1">학교 포탈 안내</button>
-    <button id="button2">근처 음식점</button>  
-    <button id="button3">카공하기 좋은 카페</button>
-    <button id="button4">근처 놀거리</button>
-   
-  </div>
+    <div class="button-container">
+        <button id="button1">학교 포탈 안내</button>
+        <button id="button2">근처 음식점</button>
+        <button id="button3">교내 카페</button>
+        <button id="button4">근처 놀거리</button>
+    </div>
     <br>
     <br>
    
-    <img src="map.jpeg" alt="">
-
+    <div class="container">
+        <img src="portalmap.png" alt="Map Image">
+        <img class="num num1" src="num1.jpeg" >
+        <img class="num num2" src="num2.jpeg" >
+        <img class="num num3" src="num3.jpeg" >
+        <img class="num num4" src="num4.jpeg">
+        
+    </div>
 
     <br>
     <br>
     <div class="button-container">
-    <button id="button5">메인화면</button>
+        <button id="button5">메인화면</button>
     </div>
     
     <script>
-        // JavaScript 
         document.getElementById("button1").addEventListener("click", function() {
             window.location.href = "portal.html";
         });
@@ -121,6 +87,19 @@
         document.getElementById("button5").addEventListener("click", function() {
             window.location.href = "main.html";
         });
+        document.querySelector(".num1").addEventListener("click", function() {
+          window.location.href = "portal1.html";
+      });
+      document.querySelector(".num2").addEventListener("click", function() {
+          window.location.href = "portal2.html";
+      });
+      document.querySelector(".num3").addEventListener("click", function() {
+          window.location.href = "portal3.html";
+      });
+      document.querySelector(".num4").addEventListener("click", function() {
+          window.location.href = "portal4.html";
+      });
+       
     </script>
 </body>
 </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>포탈 소개</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #title {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        #head {
+            display: inline-block;
+            font-size: 70px;
+            font-weight: bold;
+            text-align: center;
+            color: #0E4A84;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        button {
+            justify-content: center;
+            width: 200px;
+            height: 80px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        #button1 {
+            background-color: #0E4A84;
+        }
+
+        #button5 {
+            background-color: black;
+            color: white;
+        }
+        img{
+            width: 200px;
+            height: 150px;
+        }
+        #arrow{
+            width: 29px;
+            height: 29px;
+        }
+     
+    </style>
+</head>
+<body>
+    <img id="title" src="title.png" alt="이미지">
+<p>1. 학생회관 3층 여자화장실로 간다</p>
+<img src="portal3_1.png" alt="">
+<br>
+<img id="arrow" src="arrow.png" alt="">
+<br>
+<p>2.여자 화장실 옆 출구를 발견한다</p>
+<img id="arrow" src="arrow.png" alt=""> <br>
+<p>3.출구로 나간 뒤 샛길을 따라가면 </p>
+<img src="portal3_2.png" alt=""><br>
+
+<img id="arrow" src="arrow.png" alt=""> <br>
+<p>인문대 도착!</p>
+<img src="portal3_3.png" alt=""><br>
+
+    <br>
+
+    <div class="button-container">
+        <button id="button1">이전</button>
+        <button id="button5">메인화면</button>
+    </div>
+    
+    <script>
+        document.getElementById("button1").addEventListener("click", function() {
+            window.location.href = "portal.html";
+        });
+        document.getElementById("button5").addEventListener("click", function() {
+            window.location.href = "main.html";
+        });
+       
+    </script>
+</body>
+</html>
