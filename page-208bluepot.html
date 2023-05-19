@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <style>
+            body {
+                text-align: center;
+            }
+
+            .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+          }
+
+          button {
+            justify-content: center;
+            width: 200px;
+            height: 80px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 100px;
+            transition: background-color 0.3s ease;
+         }
+
+            #button2 {
+            width: 150px;
+            height: 50px;
+            background-color:#0E4A84 ;
+            color: white;
+            text-align:center;
+            font-weight:bold;
+            border:none;
+            margin: auto;
+            display: block;
+            font-size: 1.0em;
+          }
+
+          #button1 {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+            text-align:center;
+            font-weight:bold;
+            border:none;
+            margin: auto;
+            display: block;
+            font-size: 1.0em;
+          }
+
+        </style>
+
+    </head>
+<body>
+    
+    <br>
+    <br>
+          <h1>블루포트 한양대FTC관점</h1> <br>
+          <img id="im" src="bluepot.png" height="200" width="400" alt="블루포트 한양대FTC관점"></td>
+         <br>
+         <br>
+         <h3>________________________________________</h3>
+         <h4> 연락처: 0507-1448-1163 <br>
+          영업 시간: 월-금 09:00-18:00 / 토 09:00-17:00 / 일요일 및 공휴일 휴무 </h4> <br>
+         <img src="emo4.png" alt="img">
+         <p> <b>팁:</b> - 시크릿오더로 주문하면 쿠폰을 모을 수 있다. <br>
+             &nbsp; - 학교 외부에 있는 카페처럼 쾌적하고 굉장히 넓어 공부하기 좋다. <br>
+             &nbsp;  - 원두 자체가 맛이 없다는 평이 많으며, 키위요거트스무디가 없다. </p>
+
+
+<br>
+<br>
+          위치: &nbsp;
+        <a href="https://naver.me/FU3yXD9M"> 한양대 FTC관 3층 (네이버 지도) </a>
+
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <div class="button-container">
+            <button id="button1">메인 화면</button>
+            <button id="button2">교내 카페</button>
+        </div>
+
+        <br> <br> <br> <br> <br>
+            <script>
+            // JavaScript 
+                document.getElementById("button1").addEventListener("click", function() {
+                window.location.href = "main.html";
+                });
+
+                document.getElementById("button2").addEventListener("click", function() {
+                window.location.href = "cafe.html";
+                });
+            </script>
+    </body>
+ </html>
