@@ -5,22 +5,28 @@
     <title>근처 음식점</title>
     <link rel="stylesheet" type="text/css" href="standard.css">
     <style>
+        img{
+                width:100px;
+                height:100px;
+            }
         table {
             border-collapse: collapse;
             width: 100%;
-
         }
         
         th, td {
             border: 2px solid #0E4A84;
             padding: 10px;
-            text-align: center;
+            text-align: left;
         }
         
         th {
             background-image: url("column-image.png");
             background-repeat: no-repeat;
             background-size: contain;
+        }
+        li{
+            text-align:left;
         }
         #im {
             width: 150px;
@@ -31,6 +37,108 @@
         #im:hover {
             transform: scale(1.2);
         }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            align-items: center;
+        }
+        #title {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            border: none;
+          }
+          
+        #head {
+            display: inline-block;
+            font-size: 70px;
+            font-weight: bold;
+            text-align: center;
+            color: #0E4A84; 
+        
+        }
+
+      
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+          }
+    
+          button {
+            justify-content: center;
+            width: 200px;
+            height: 80px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            color: white;
+            transition: background-color 0.3s ease;
+          }
+    
+          #button1 {
+            background-color: #0E4A84;
+          }
+    
+          #button2 {
+            background-color: white;
+            color: #0E4A84;
+            border: 2px solid #0E4A84;
+          }
+    
+          #button3 {
+            background-color: #0E4A84;
+          }
+    
+          #button4 {
+            background-color: black;
+          }
+        #button5
+        {
+            width: 100x;
+            height: 40px;
+            background-color:#0E4A84 ;
+            color: white;
+           
+        }
+        #button6{
+            width: 100x;
+            height: 40px;
+            background-color: #0E4A84;
+            color: white;
+        }
+        #button7{
+            width: 100x;
+            height: 40px;
+            background-color: #0E4A84;
+            color: white;
+        }
+        #button8{
+            width: 100x;
+            height: 40px;
+            background-color: #0E4A84;
+            color: white;
+        }
+        #button9{
+            width: 100x;
+            height: 40px;
+            background-color: #0E4A84;
+            color: white;
+        }
+        #button10{
+            width: 100x;
+            height: 40px;
+            background-color: #0E4A84;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
@@ -41,7 +149,13 @@
     <button id="button2">근처 음식점</button>  
     <button id="button3">교내 카페</button>
     <button id="button4">근처 놀거리</button>
-   
+  </div>
+  <div class="button-select">
+    <button id="button6">전체 보기</button>
+    <button id="button7">한식</button>  
+    <button id="button8">양식</button>
+    <button id="button9">일식</button>
+    <button id="button10">기타</button>
   </div>
     <br>
     <br>
@@ -49,16 +163,15 @@
     <table>
         <tr>
             <th>NO</th>
-            <th>이미지</th>
             <th>이름</th>
             <th>운영시간</th>
             <th>장소</th>
             <th>예약 가능 여부</th>
             <th>추천메뉴</th>
+            <th>이미지</th>
         </tr>
         <tr>
             <td>1</td>
-            <td><img id="im" src="restaurant1.png" alt=""></td>
             <td>돈까스 전원</td>
             <td>평일 11:20-20:30 (브레이크 타임 15:00-17:00) <br> 토요일 11:20-15:00</td>
             <td><a href="https://naver.me/5PS2RjWv">서울 성동구 왕십리로24길 13 돈까스전원</a></td>
@@ -68,10 +181,10 @@
                 <li>안심돈가스 정식</li>
             </ul>
             </td>
+            <td><img id="im" src="돈까스 전원.jpg" alt=""></td>
         </tr>
         <tr>
             <td>2</td>
-            <td><img id="im" src="restaurant1.png" alt=""></td>
             <td>봄의 정원</td>
             <td>평일 11:30-21:30 (브레이크 타임 15:00-17:00, 주말 노브레이크) <br> 월요일 휴무</td>
             <td><a href="https://map.naver.com/v5/search/%EB%B4%84%EC%9D%98%EC%A0%95%EC%9B%90/place/1802840257?placePath=%3Fentry=pll&c=15,0,0,0,dh">서울 성동구 마조로7길 13 지층 봄의정원 왕십리점</a></td>
@@ -82,10 +195,10 @@
                 <li>본메로우 라구 파스타</li>
             </ul>
             </td>
+            <td><img id="im" src="봄의 정원.jpg" alt=""></td>
         </tr>
         <tr>
             <td>3</td>
-            <td><img id="im" src="restaurant1.png" alt=""></td>
             <td>여우주막</td>
             <td>매일 16:00-2:00</td>
             <td><a href="https://map.naver.com/v5/entry/place/391242375?lng=127.04032270790569&lat=37.55923921142645&placePath=%2Fhome&c=15,0,0,0,dh">서울 성동구 마조로 15-8</a></td>
@@ -95,23 +208,23 @@
                 <li>지옥불닭 닭볶음탕</li>
             </ul>
             </td>
+            <td><img id="im" src="여우주막.jpg" alt=""></td>
         </tr>
         <tr>
             <td>4</td>
-            <td><img id="im" src="restaurant1.png" alt=""></td>
             <td>끄트머리집</td>
             <td>매일 11:00-21:30 (브레이크 타임 15:00-16:30)</td>
             <td><a href="https://map.naver.com/v5/search/%EB%81%84%EB%9C%A8%EB%A8%B8%EB%A6%AC/place/1540591688?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=15,0,0,0,dh">서울 성동구 마조로3길 8 1층</a></td>
-            <td><a href="tel:0507-1326-8574">전화 예약</a></td>
+            <td><a href="tel:0507-1326-8574"></a>전화 예약</td>
             <td>
                 <ul>
                 <li>돼지김치구이</li>
             </ul>
             </td>
+            <td><img id="im" src="끄트머리.jpg" alt=""></td>
         </tr>
         <tr>
             <td>5</td>
-            <td><img id="im" src="restaurant1.png" alt=""></td>
             <td>스시도쿠</td>
             <td>매일 11:30-22:00</td>
             <td><a href="https://map.naver.com/v5/search/%EC%8A%A4%EC%8B%9C%EB%8F%84%EC%BF%A0/place/36466212?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=15,0,0,0,dh">서울 성동구 왕십리광장로 6 1층</a></td>
@@ -122,10 +235,10 @@
                 <li>수작스시</li>
             </ul>
             </td>
+            <td><img id="im" src="스시도쿠.jpg" alt=""></td>
         </tr>
         <tr>
             <td>6</td>
-            <td><img id="im" src="restaurant1.png" alt=""></td>
             <td>춘향미엔</td>
             <td>평일 11:00-3:00 (평일 브레이크 타임 14:50-16:00) <br> 매주 일요일 휴무</td>
             <td><a href="https://map.naver.com/v5/search/%EC%B6%98%ED%96%A5%EB%AF%B8%EC%97%94/place/1643229713?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=15,0,0,0,dh">서울 성동구 왕십리로21길 26 1층</a></td>
@@ -136,6 +249,92 @@
                 <li>고기만두</li>
             </ul>
             </td>
+            <td><img id="im" src="춘향미엔.png" alt=""></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>베네토피자앤펍</td>
+                <td>평일 11:30-23:0 (라스트오더 22:00) <br> 일요일 휴무</td>
+                <td><a href="https://map.naver.com/v5/entry/place/1005105047?lng=127.0396216&lat=37.5584691&placePath=%2F&entry=plt&c=15,0,0,0,dh">서울 성동구 마조로3길 7-1</a></td>
+                <td>X</td>
+                <td>
+                    <ul>
+                    <li>쉬림프피자</li>
+                    <li>훈제삼겹 로제 파스타</li>
+                </ul>
+                </td>
+                <td><img id="im" src="베네토.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>다이너 왕십리점</td>
+                <td>평일 10:30-22:00 (브레이크 타임 15:00-17:00) </td>
+                <td><a href="https://map.naver.com/v5/entry/place/1212006015?c=15,0,0,0,dh">서울 성동구 왕십리광장로 17 비트플렉스몰 3층 다이너</a></td>
+                <td>X</td>
+                <td>
+                    <ul>
+                    <li>비스큐 로제 파스타</li>
+                    <li>안심 스테이크</li>
+                </ul>
+                </td>
+                <td><img id="im" src="다이너.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>제일곱창 본점</td>
+            <td>매일 12:00-22:00<br>매주 일요일 정기휴무</td>
+            <td><a href="https://map.naver.com/v5/entry/place/152310007?c=13,0,0,0,dh">서울 성동구 고산자로 281 1층 제일곱창</a></td>
+            <td>X</td>
+            <td>
+                <ul>
+                <li>한우곱창</li>
+                <li>한우대창</li>
+            </ul>
+            </td>
+            <td><img id="im" src="제일곱창.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>이돈집</td>
+            <td>매일 11:00-22:00(브레이크 타임 15:00-16:30)<br>매주 일요일 정기휴무</td>
+            <td><a href="https://map.naver.com/v5/search/%EC%9D%B4%EB%8F%88%EC%A7%91/place/1282426797?c=13,0,0,0,dh&isCorrectAnswer=true">서울 성동구 마조로3길 7 1층</a></td>
+            <td>X</td>
+            <td>
+                <ul>
+                <li>반근찌개</li>
+                <li>한근찌개</li>
+            </ul>
+            </td>
+            <td><img id="im" src="이돈집.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>멘푸라</td>
+                <td>평일 11:00-20:00 (브레이크 타임 15:00-16:30) </td>
+                <td><a href="https://map.naver.com/v5/entry/place/1720225160?lng=127.0401563&lat=37.5585545&placePath=%2Fhome&entry=plt&c=15,0,0,0,dh">서울 성동구 마조로3길 6 1층 멘푸라</a></td>
+                <td>X</td>
+                <td>
+                    <ul>
+                    <li>마제멘</li>
+                    <li>카레멘</li>
+                </ul>
+                </td>
+                <td><img id="im" src="멘푸라.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>매란방 왕십리본점</td>
+                <td>매일 11:00-22:00</td>
+                <td><a href="https://map.naver.com/v5/entry/place/37883589?c=15,0,0,0,dh">서울 성동구 왕십리광장로 17 2층 역무1호</a></td>
+                <td><a href="https://map.naver.com/v5/entry/place/37883589?c=15,0,0,0,dh">네이버 예약</a></td>
+                <td>
+                    <ul>
+                    <li>차돌 듬뿍 짜장면</li>
+                    <li>몽실 탕수육</li>
+                    <li>레몬 크림 새우</li>
+                </ul>
+                </td>
+                <td><img id="im" src="매란방.jpg" alt=""></td>
         </tr>
     </table>
     <br>
@@ -160,6 +359,21 @@
         });
         document.getElementById("button5").addEventListener("click", function() {
             window.location.href = "main.html";
+        });
+        document.getElementById("button6").addEventListener("click", function() {
+            window.location.href = "restaurant.html";
+        });
+        document.getElementById("button7").addEventListener("click", function() {
+            window.location.href = "korean.html";
+        });
+        document.getElementById("button8").addEventListener("click", function() {
+            window.location.href = "western.html";
+        });
+        document.getElementById("button9").addEventListener("click", function() {
+            window.location.href = "japanese.html";
+        });
+        document.getElementById("button10").addEventListener("click", function() {
+            window.location.href = "etc_rest.html";
         });
     </script>
 </body>

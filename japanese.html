@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <style>
+            img{
+                width:100px;
+                height:100px;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+    
+            }
+            
+            th, td {
+                border: 2px solid #0E4A84;
+                padding: 10px;
+                text-align: left;
+            }
+            
+            th {
+                background-image: url("column-image.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            #button1 {
+            width: 150px;
+            height: 50px;
+            background-color:#0E4A84 ;
+            color: white;
+            text-align:center;
+            font-weight:bold;
+            border:none;
+            margin: auto;
+            display: block;
+          }
+            </style>
+    </head>
+<body>
+<table>
+    <tr>
+        <th>NO</th>
+        <th>이름</th>
+        <th>운영시간</th>
+        <th>장소</th>
+        <th>예약 가능 여부</th>
+        <th>추천메뉴</th>
+        <th>이미지</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>돈까스 전원</td>
+        <td>평일 11:20-20:30 (브레이크 타임 15:00-17:00) <br> 토요일 11:20-15:00</td>
+        <td><a href="https://naver.me/5PS2RjWv">서울 성동구 왕십리로24길 13 돈까스전원</a></td>
+        <td>X</td>
+        <td>
+            <ul>
+            <li>안심돈가스 정식</li>
+        </ul>
+        </td>
+        <td><img id="im" src="돈까스 전원.jpg" alt=""></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>스시도쿠</td>
+        <td>매일 11:30-22:00</td>
+        <td><a href="https://map.naver.com/v5/search/%EC%8A%A4%EC%8B%9C%EB%8F%84%EC%BF%A0/place/36466212?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=15,0,0,0,dh">서울 성동구 왕십리광장로 6 1층</a></td>
+        <td><a href="https://map.naver.com/v5/search/%EC%8A%A4%EC%8B%9C%EB%8F%84%EC%BF%A0/place/36466212?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=15,0,0,0,dh">네이버 예약</a></td>
+        <td>
+            <ul>
+            <li>명작스시</li>
+            <li>수작스시</li>
+        </ul>
+        </td>
+        <td><img id="im" src="스시도쿠.jpg" alt=""></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>멘푸라</td>
+            <td>평일 11:00-20:00 (브레이크 타임 15:00-16:30) </td>
+            <td><a href="https://map.naver.com/v5/entry/place/1720225160?lng=127.0401563&lat=37.5585545&placePath=%2Fhome&entry=plt&c=15,0,0,0,dh">서울 성동구 마조로3길 6 1층 멘푸라</a></td>
+            <td>X</td>
+            <td>
+                <ul>
+                <li>마제멘</li>
+                <li>카레멘</li>
+            </ul>
+            </td>
+            <td><img id="im" src="멘푸라.jpg" alt=""></td>
+    </tr>
+</table>
+<br>
+<br>
+<div class="button-container">
+    <button id="button1">메인으로 돌아가기</button></div>
+    <script>
+        // JavaScript 
+        document.getElementById("button1").addEventListener("click", function() {
+            window.location.href = "main.html";
+        });
+        </script>
+</body>
+</html>

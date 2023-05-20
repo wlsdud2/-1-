@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <style>
+            body {
+                text-align: center;
+            }
+
+            .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+          }
+
+          button {
+            justify-content: center;
+            width: 200px;
+            height: 80px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 100px;
+            transition: background-color 0.3s ease;
+         }
+
+            #button2 {
+            width: 150px;
+            height: 50px;
+            background-color:#0E4A84 ;
+            color: white;
+            text-align:center;
+            font-weight:bold;
+            border:none;
+            margin: auto;
+            display: block;
+            font-size: 1.0em;
+          }
+
+          #button1 {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+            text-align:center;
+            font-weight:bold;
+            border:none;
+            margin: auto;
+            display: block;
+            font-size: 1.0em;
+          }
+
+        </style>
+
+    </head>
+<body>
+    
+    <br>
+    <br>
+          <h1>카페띠아모 한양대학교점</h1> <br>
+          <img id="im" src="tiamo.jpg" height="300" width="200" alt="카페띠아모 한양대학교점"></td>
+         <br>
+         <br>
+         <h3>________________________________________</h3>
+         <h4> 연락처: 02-2298-8901 <br>
+          영업 시간: 월-목 08:00-20:00 / 금 08:00-19:30 / 토 08:00-18:00 / 일요일 및 공휴일 휴무 </h4> <br>
+         <img src="emo2.png" alt="img">
+         <p> <b>팁:</b> - 야외 테라스가 있어 경치를 구경하며 먹기 좋다. <br>
+             &nbsp; - 텀블러를 들고가면 300원 할인이 있다. <br>
+             &nbsp;  - 디저트 종류가 많아 배 채우기도 좋다. </p>
+
+
+<br>
+<br>
+          위치: &nbsp;
+        <a href="https://naver.me/5fnULBOR" target="_blank"> 사자가 군것질 할 때 바로 옆(네이버지도)  </a>
+
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <div class="button-container">
+            <button id="button1">메인 화면</button>
+            <button id="button2">교내 카페</button>
+        </div>
+
+        <br> <br> <br> <br> <br>
+            <script>
+            // JavaScript 
+                document.getElementById("button1").addEventListener("click", function() {
+                window.location.href = "main.html";
+                });
+
+                document.getElementById("button2").addEventListener("click", function() {
+                window.location.href = "cafe.html";
+                });
+            </script>
+    </body>
+ </html>

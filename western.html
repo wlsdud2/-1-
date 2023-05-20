@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <style>
+            img{
+                width:100px;
+                height:100px;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+    
+            }
+            
+            th, td {
+                border: 2px solid #0E4A84;
+                padding: 10px;
+                text-align: left;
+            }
+            
+            th {
+                background-image: url("column-image.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            #button1 {
+            width: 150px;
+            height: 50px;
+            background-color:#0E4A84 ;
+            color: white;
+            text-align:center;
+            font-weight:bold;
+            border:none;
+            margin: auto;
+            display: block;
+          }
+            </style>
+    </head>
+<body>
+<table>
+    <tr>
+        <th>NO</th>
+        <th>이름</th>
+        <th>운영시간</th>
+        <th>장소</th>
+        <th>예약 가능 여부</th>
+        <th>추천메뉴</th>
+        <th>이미지</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>봄의 정원</td>
+            <td>평일 11:30-21:30 (브레이크 타임 15:00-17:00, 주말 노브레이크) <br> 월요일 휴무</td>
+            <td><a href="https://map.naver.com/v5/search/%EB%B4%84%EC%9D%98%EC%A0%95%EC%9B%90/place/1802840257?placePath=%3Fentry=pll&c=15,0,0,0,dh">서울 성동구 마조로7길 13 지층 봄의정원 왕십리점</a></td>
+            <td><a href="https://map.naver.com/v5/search/%EB%B4%84%EC%9D%98%EC%A0%95%EC%9B%90/place/1802840257?placePath=%3Fentry=pll&c=15,0,0,0,dh">네이버 예약</a></td>
+            <td>
+                <ul>
+                <li>구름떡볶이</li>
+                <li>본메로우 라구 파스타</li>
+            </ul>
+            </td>
+            <td><img id="im" src="봄의 정원.jpg" alt=""></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>베네토피자앤펍</td>
+            <td>평일 11:30-23:0 (라스트오더 22:00) <br> 일요일 휴무</td>
+            <td><a href="https://map.naver.com/v5/entry/place/1005105047?lng=127.0396216&lat=37.5584691&placePath=%2F&entry=plt&c=15,0,0,0,dh">서울 성동구 마조로3길 7-1</a></td>
+            <td>X</td>
+            <td>
+                <ul>
+                <li>쉬림프피자</li>
+                <li>훈제삼겹 로제 파스타</li>
+            </ul>
+            </td>
+            <td><img id="im" src="베네토.jpg" alt=""></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>다이너 왕십리점</td>
+            <td>평일 10:30-22:00 (브레이크 타임 15:00-17:00) </td>
+            <td><a href="https://map.naver.com/v5/entry/place/1212006015?c=15,0,0,0,dh">서울 성동구 왕십리광장로 17 비트플렉스몰 3층 다이너</a></td>
+            <td>X</td>
+            <td>
+                <ul>
+                <li>비스큐 로제 파스타</li>
+                <li>안심 스테이크</li>
+            </ul>
+            </td>
+            <td><img id="im" src="다이너.jpg" alt=""></td>
+    </tr>
+</table>
+<br>
+<br>
+<div class="button-container">
+    <button id="button1">메인으로 돌아가기</button></div>
+    <script>
+        // JavaScript 
+        document.getElementById("button1").addEventListener("click", function() {
+            window.location.href = "main.html";
+        });
+        </script>
+</body>
+</html>

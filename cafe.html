@@ -5,56 +5,75 @@
     <title>교내 카페</title>
     <link rel="stylesheet" type="text/css" href="standard.css">
     <style>
-        .container {
-            position: relative;
-            width: 500px; /* 이미지의 가로 크기에 맞게 조정 */
-            height: 500px; /* 이미지의 세로 크기에 맞게 조정 */
-        }
 
-        .pin {
-            position: absolute;
-            width: 40px;
-            height: 50px;
-        }
 
-        .pin1 {
-            top: 610px;
-            left: 870px;
-        }
+.map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      position: relative;
+    }
 
-        .pin2 {
-            top: 800px;
-            left: 596px;
-        }
+    .map {
+      display: block;
+      margin: auto;
+    }
 
-        .pin3 {
-            top: 550px;
-            left: 450px;
-        }
+    .pin {
+      position: absolute;
+      cursor: pointer;
+    }
 
-        .pin4 {
-            top: 250px;
-            left: 690px;
-        }
+    h2 {
+        text-align: center; 
+      font-size: 1.4em;
+      font-weight: bold;
+    }
 
-        .cafe-info {
-            float: left;
-            width: 400px;
-            height: 300px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  </style>
+  <script>
+    function reloadPage() {
+      location.reload();
+    }
 
-        }
+    window.addEventListener('DOMContentLoaded', function() {
+      var mapContainer = document.querySelector('.map-container');
+      var pins = document.querySelectorAll('.pin');
 
-        .cafe-info iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+      function positionPins() {
+        var mapRect = mapContainer.getBoundingClientRect();
+
+        pins.forEach(function(pin) {
+          var pinRect = pin.getBoundingClientRect();
+          var pinWidth = pinRect.width;
+          var pinHeight = pinRect.height;
+
+          var offsetX = (mapRect.width - pinWidth) / 2;
+          var offsetY = (mapRect.height - pinHeight) / 2;
+
+          var pinLeft = parseInt(pin.getAttribute('data-left'), 10);
+          var pinTop = parseInt(pin.getAttribute('data-top'), 10);
+
+          var left = offsetX + pinLeft + 'px';
+          var top = offsetY + pinTop + 'px';
+
+          pin.style.left = left;
+          pin.style.top = top;
+        });
+      }
+
+      positionPins();
+
+      window.addEventListener('resize', function() {
+        clearTimeout(window.reloadTimer);
+        window.reloadTimer = setTimeout(reloadPage, 1000);
+      });
+    });
+  </script>
 </head>
 <body>
+
     <img id="title" src="title.png" alt="이미지">
 
     <div class="button-container">
@@ -65,17 +84,41 @@
     </div>
     <br>
     <br>
-   
-    <div class="container">
-        <img src="map.jpeg" alt="Map Image">
-        <img class="pin pin1" src="pin.png" alt="Pin Image">
-        <img class="pin pin2" src="pin.png" alt="Pin Image">
-        <img class="pin pin3" src="pin.png" alt="Pin Image">
-        <img class="pin pin4" src="pin.png" alt="Pin Image">
-        <div class="cafe-info">
-            <iframe src="" frameborder="0"></iframe>
-        </div>
+
+ <h2> 핀 이미지를 누르면 카페에 대한 상세 설명을 확인하실 수 있어요! 
+  <br> 핀이 이상한 위치에 있다면, 새로고침을 해주세요!
+ </h2>
+
+ <br>
+ <br>
+ 
+  <div class="map-container">
+    <img class="map" src="map.jpeg" alt="지도 이미지">
+
+    <div class="pin" data-left="175" data-top="420">
+      <a href="page-703bluepot.html">
+        <img src="pin.png" alt="핀" width="40px" height="40px">
+      </a>
     </div>
+
+    <div class="pin" data-left="120" data-top="550">
+      <a href="page-tiamo.html">
+        <img src="pin.png" alt="핀" width="40px" height="40px">
+      </a>
+    </div>
+
+    <div class="pin" data-left="35" data-top="780">
+      <a href="page-thebake.html">
+        <img src="pin.png" alt="핀" width="40px" height="40px">
+      </a>
+    </div>
+
+    <div class="pin" data-left="340" data-top="650">
+      <a href="page-208bluepot.html">
+        <img src="pin.png" alt="핀" width="40px" height="40px">
+      </a>
+    </div>
+  </div>
 
     <br>
     <br>
@@ -99,19 +142,7 @@
         document.getElementById("button5").addEventListener("click", function() {
             window.location.href = "main.html";
         });
-        
-        const pins = document.querySelectorAll('.pin');
-        const cafeInfo = document.querySelector('.cafe-info');
-        const iframe = cafeInfo.querySelector('iframe');
-        
-        pins.forEach(function(pin, index) {
-            pin.addEventListener('click', function() {
-                // 카페 정보가 나타나게 함
-                cafeInfo.style.display = 'block';
-                // 해당 카페 정보를 로드함
-                iframe.src = `cafe_info${index + 1}.html`;
-            });
-        });
+
     </script>
 </body>
 </html>
