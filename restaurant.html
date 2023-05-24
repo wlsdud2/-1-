@@ -9,42 +9,44 @@
                 width:100px;
                 height:100px;
             }
+
         table {
-      width: 100%;
-      border-collapse: collapse;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            }
 
-    th {
-      background-color: #f2f2f2;
-      padding: 10px;
-    }
+        th {
+            background-color: #f2f2f2;
+            padding: 10px;
+            }
 
-    td {
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
-    }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            }
         
         li{
             text-align:left;
-        }
+            }
         #im {
             width: 150px;
             height: 150px;
             transition: transform 0.5s ease;
-        }
+            }
         
         #im:hover {
             transform: scale(1.2);
             border-radius: 5px;
-        }
+            }
 
 
         body {
             font-family: Arial, sans-serif;
             align-items: center;
-        }
+            }
+
         #title {
             display: block;
             width: 100%;
@@ -52,7 +54,7 @@
             margin: 0;
             padding: 0;
             border: none;
-          }
+            }
           
         #head {
             display: inline-block;
@@ -60,8 +62,7 @@
             font-weight: bold;
             text-align: center;
             color: #0E4A84; 
-        
-        }
+            }
 
       
         #button6{
@@ -104,21 +105,21 @@
 <body>
     <img id="title" src="title.png" alt="이미지">
 
-<nav>
-    <button id="button1">학교 포탈 안내</button>
-    <button id="button2">근처 음식점</button>
-    <button id="button3">교내 카페</button>
-    <button id="button4">근처 놀거리</button>
-    <button id="button5">메인 페이지</button>
-</nav>
+    <nav>
+        <button id="button1">학교 포탈 안내</button>
+        <button id="button2">근처 음식점</button>
+        <button id="button3">교내 카페</button>
+        <button id="button4">근처 놀거리</button>
+        <button id="button5">메인 페이지</button>
+    </nav>
 
-  <nav>
-    <button id="button6">전체 보기</button>
-    <button id="button7">한식</button>  
-    <button id="button8">양식</button>
-    <button id="button9">일식</button>
-    <button id="button10">기타</button>
-  </nav>
+    <nav>
+        <button id="button6">전체 보기</button>
+        <button id="button7">한식</button>  
+        <button id="button8">양식</button>
+        <button id="button9">일식</button>
+        <button id="button10">기타</button>
+    </nav>
     <br>
     <br>
    
@@ -302,7 +303,6 @@
     
 
     <script>
-        // JavaScript 
         document.getElementById("button1").addEventListener("click", function() {
             window.location.href = "portal.html";
         });

@@ -6,51 +6,51 @@
         <link rel="stylesheet" type="text/css" href="standard.css">
         <style>
     table {
-      width: 100%;
-      border-collapse: collapse;
-      font-family: Arial, sans-serif;
-      text-align: center;
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        text-align: center;
     }
 
     th {
-      background-color: #f2f2f2;
-      padding: 10px;
+        background-color: #f2f2f2;
+        padding: 10px;
     }
 
     td {
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
     }
 
     .tab-list {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      justify-content: center;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
     }
 
     .tab-list li {
-    margin-right: 2%;
-    font-size: 1.5vw; /* Adjust the font size as desired */
-    border: none; /* Remove the borders */
+        margin-right: 2%;
+        font-size: 1.5vw;
+        border: none;
     }
 
     .tab-list li a {
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 4px;
-      color: #0E4A84;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 4px;
+        color: #0E4A84;
     }
 
     .tab-list li a.active {
-      background-color: #ccc;
+        background-color: #ccc;
     }
 
     .place-img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 4px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 4px;
     }
         </style>
     </head>
@@ -69,35 +69,32 @@
             <br>
             <br>
 
-  <ul class="tab-list">
-    <li><a href="#" onclick="showCategory('all')">전체</a></li>
-    <li><a href="#" onclick="showCategory('coin-karaoke')">코인 노래방</a></li>
-    <li><a href="#" onclick="showCategory('board-cafe')">놀이 카페</a></li>
-    <li><a href="#" onclick="showCategory('pc-bang')">PC방</a></li>
-    <li><a href="#" onclick="showCategory('movies')">영화</a></li>
-    <li><a href="#" onclick="showCategory('sports')">스포츠</a></li>
-    <li><a href="#" onclick="showCategory('etc')">기타</a></li>
-  </ul>
+        <ul class="tab-list">
+            <li><a href="#" onclick="showCategory('all')">전체</a></li>
+            <li><a href="#" onclick="showCategory('coin-karaoke')">코인 노래방</a></li>
+            <li><a href="#" onclick="showCategory('board-cafe')">놀이 카페</a></li>
+            <li><a href="#" onclick="showCategory('pc-bang')">PC방</a></li>
+            <li><a href="#" onclick="showCategory('movies')">영화</a></li>
+            <li><a href="#" onclick="showCategory('sports')">스포츠</a></li>
+            <li><a href="#" onclick="showCategory('etc')">기타</a></li>
+        </ul>
 
-<br>
-<br>
+        <br>
+        <br>
 
-  <table id="places-table">
-    <thead>
-      <tr>
-        <th>이미지</th>
-        <th>이름</th>
-        <th>장소</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
+        <table id="places-table">
+            <thead>
+            <tr>
+                <th>이미지</th>
+                <th>이름</th>
+                <th>장소</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     
-
-
         <script>
-            // JavaScript
             document
                 .getElementById("button1")
                 .addEventListener("click", function () {
