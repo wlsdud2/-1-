@@ -10,21 +10,22 @@
                 height:100px;
             }
         table {
-            border-collapse: collapse;
-            width: 100%;
-        }
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
         
-        th, td {
-            border: 2px solid #0E4A84;
-            padding: 10px;
-            text-align: left;
-        }
-        
-        th {
-            background-image: url("column-image.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
         li{
             text-align:left;
         }
@@ -36,6 +37,7 @@
         
         #im:hover {
             transform: scale(1.2);
+            border-radius: 5px;
         }
 
 
@@ -62,52 +64,6 @@
         }
 
       
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 50px;
-          }
-    
-          button {
-            justify-content: center;
-            width: 200px;
-            height: 80px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            margin: 10px;
-            color: white;
-            transition: background-color 0.3s ease;
-          }
-    
-          #button1 {
-            background-color: #0E4A84;
-          }
-    
-          #button2 {
-            background-color: white;
-            color: #0E4A84;
-            border: 2px solid #0E4A84;
-          }
-    
-          #button3 {
-            background-color: #0E4A84;
-          }
-    
-          #button4 {
-            background-color: black;
-          }
-        #button5
-        {
-            width: 100x;
-            height: 40px;
-            background-color:#0E4A84 ;
-            color: white;
-           
-        }
         #button6{
             width: 100x;
             height: 40px;
@@ -139,24 +95,30 @@
             color: white;
         }
 
+        a{
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
     <img id="title" src="title.png" alt="이미지">
 
-   <div class="button-container">
+<nav>
     <button id="button1">학교 포탈 안내</button>
-    <button id="button2">근처 음식점</button>  
+    <button id="button2">근처 음식점</button>
     <button id="button3">교내 카페</button>
     <button id="button4">근처 놀거리</button>
-  </div>
-  <div class="button-select">
+    <button id="button5">메인 페이지</button>
+</nav>
+
+  <nav>
     <button id="button6">전체 보기</button>
     <button id="button7">한식</button>  
     <button id="button8">양식</button>
     <button id="button9">일식</button>
     <button id="button10">기타</button>
-  </div>
+  </nav>
     <br>
     <br>
    
@@ -322,7 +284,7 @@
                 <td><img id="im" src="멘푸라.jpg" alt=""></td>
         </tr>
         <tr>
-            <td>3</td>
+            <td>12</td>
             <td>매란방 왕십리본점</td>
                 <td>매일 11:00-22:00</td>
                 <td><a href="https://map.naver.com/v5/entry/place/37883589?c=15,0,0,0,dh">서울 성동구 왕십리광장로 17 2층 역무1호</a></td>
@@ -337,11 +299,7 @@
                 <td><img id="im" src="매란방.jpg" alt=""></td>
         </tr>
     </table>
-    <br>
-    <br>
-    <div class="button-container">
-        <button id="button5">메인화면</button>
-        </div>
+    
 
     <script>
         // JavaScript 

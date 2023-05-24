@@ -22,11 +22,11 @@ body {
     color: #0E4A84;
 }
 
-.button-container {
+nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 3%;
 }
 
 button {
@@ -43,25 +43,24 @@ button {
     transition: background-color 0.3s ease;
 }
 
-#button1 {
+#button1,
+#button3 {
     background-color: #0E4A84;
 }
 
-#button2 {
+#button2,
+#button4 {
     background-color: white;
     color: #0E4A84;
     border: 2px solid #0E4A84;
 }
 
-#button3 {
-    background-color: #0E4A84;
-}
-
-#button4 {
-    background-color: black;
-}
-
 #button5 {
     background-color: black;
-    color: white;
+}
+
+button:hover {
+    background-color: #dcdcdc !important;
+    color: #0E4A84 !important;
+    transform: scale(1.05);
 }

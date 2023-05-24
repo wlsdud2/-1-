@@ -4,40 +4,6 @@
     <meta charset="UTF-8">
     <title>한양대 새내기를 위한 정보</title>
     <style>
-      header {
-        
-        width: 100%;
-        font-size: 5vw;
-        font-weight:bold;
-        
-        display: flex;
-        align-items: center; /* 수직 정렬 */
-        justify-content: center; /* flex direction에 대해서 정렬방식 선택 */
-
-        margin-top: 1%;
-        color: #0E4A84;
-        border-top: double;
-        border-bottom: double;
-        border-width: .2em;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        border-color: #0E4A84;
-
-        
-      }
-
-      nav {
-
-      }
-
-      section {
-
-      }
-
-      footer {
-
-      }
-
       body {
         font-family: Arial, sans-serif;
         display: flex;
@@ -48,7 +14,21 @@
         padding: 0;
       }
 
+      #title {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
 
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 3%;
+      }
 
       h1 {
         font-size: 3.5rem;
@@ -59,12 +39,7 @@
         padding: 0;
       }
 
-      .button-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 50px;
-      }
+      
 
       button {
         justify-content: center;
@@ -80,21 +55,18 @@
         transition: background-color 0.3s ease;
       }
 
-      #button1 {
+
+      #button1, #button3 {
         background-color: #0E4A84;
       }
 
-      #button2 {
+      #button2, #button4 {
         background-color: white;
         color: #0E4A84;
         border: 2px solid #0E4A84;
       }
-
-      #button3 {
-        background-color: #0E4A84;
-      }
-
-      #button4 {
+      
+      #button5 {
         background-color: black;
       }
 
@@ -108,31 +80,30 @@
       position: absolute;
       top: 63%;
       left: 15%;
-      width: 300px;
+      width: 30%;
      }
     </style>
   </head>
 
   <body>
-    <header>
-      <img src="HYU_logo_singlecolor/HYU_logo_singlecolor_png.png" width="12%">&nbsp;&nbsp;새내기를 위한 한양대 정보
-    </header>
+    <img id="title" src="title.png" alt="이미지">
 
-    <div class="button-container">
+    <nav>
       <button id="button1">학교 포탈 안내</button>
       <button id="button2">근처 음식점</button>  
       <button id="button3">교내 카페</button>
       <button id="button4">근처 놀거리</button>
-    </div>
+      <button id="button5">메인 페이지</button>
+    </nav>
 
     <img id="main" src="main1.png" alt="이미지">
 
-    <div id="main2-container" style="position: relative;">
+    <div style="position: relative;">
       <a href="https://www.hanyang.ac.kr/">
       <img id="link" src="link.png" alt="">
       </a>
       <img id="main" src="main2.png" alt="이미지">
-   
+    </div>
  
     <script>
       document.getElementById("button1").addEventListener("click", function() {
@@ -149,6 +120,10 @@
 
       document.getElementById("button4").addEventListener("click", function() {
         window.location.href = "play.html";
+      });
+
+      document.getElementById("button5").addEventListener("click", function () {
+        window.location.href = "main.html";
       });
     </script>
   </body>
