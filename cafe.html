@@ -7,17 +7,10 @@
     <style>
 
 
-.map-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
+    .map-container {
       position: relative;
-    }
-
-    .map {
-      display: block;
-      margin: auto;
+      width: 600px; 
+      height: 600px;
     }
 
     .pin {
@@ -26,51 +19,18 @@
     }
 
     h2 {
-        text-align: center; 
       font-size: 1.4em;
       font-weight: bold;
     }
 
-  </style>
-  <script>
-    function reloadPage() {
-      location.reload();
+    .pin { transition: 1.0s; }
+    .pin:hover img, .pin a:focus img {
+      transform: scale(1.2);
     }
 
-    window.addEventListener('DOMContentLoaded', function() {
-      var mapContainer = document.querySelector('.map-container');
-      var pins = document.querySelectorAll('.pin');
+    
 
-      function positionPins() {
-        var mapRect = mapContainer.getBoundingClientRect();
-
-        pins.forEach(function(pin) {
-          var pinRect = pin.getBoundingClientRect();
-          var pinWidth = pinRect.width;
-          var pinHeight = pinRect.height;
-
-          var offsetX = (mapRect.width - pinWidth) / 2;
-          var offsetY = (mapRect.height - pinHeight) / 2;
-
-          var pinLeft = parseInt(pin.getAttribute('data-left'), 10);
-          var pinTop = parseInt(pin.getAttribute('data-top'), 10);
-
-          var left = offsetX + pinLeft + 'px';
-          var top = offsetY + pinTop + 'px';
-
-          pin.style.left = left;
-          pin.style.top = top;
-        });
-      }
-
-      positionPins();
-
-      window.addEventListener('resize', function() {
-        clearTimeout(window.reloadTimer);
-        window.reloadTimer = setTimeout(reloadPage, 1000);
-      });
-    });
-  </script>
+  </style>
 </head>
 <body>
 
@@ -86,40 +46,35 @@
     <br>
     <br>
 
- <h2> 핀 이미지를 누르면 카페에 대한 상세 설명을 확인하실 수 있어요! 
-  <br> 핀이 이상한 위치에 있다면, 새로고침을 해주세요!
- </h2>
-
  <br>
  <br>
  
   <div class="map-container">
     <img class="map" src="map.jpeg" alt="지도 이미지">
+      <div class="pin" style="top:390px; left:710px;">
+        <a href="page-703bluepot.html">
+          <img src="pin.png" alt="핀" width="65px" height="50px">
+        </a>
+      </div>
 
-    <div class="pin" data-left="175" data-top="420">
-      <a href="page-703bluepot.html">
-        <img src="pin.png" alt="핀" width="40px" height="40px">
-      </a>
-    </div>
+      <div class="pin" style="top:520px; left:635px;">
+        <a href="page-tiamo.html">
+          <img src="pin.png" alt="핀" width="65px" height="50px">
+        </a>
+      </div>
 
-    <div class="pin" data-left="120" data-top="550">
-      <a href="page-tiamo.html">
-        <img src="pin.png" alt="핀" width="40px" height="40px">
-      </a>
-    </div>
+      <div class="pin" style="top:750px; left:540px;">
+        <a href="page-thebake.html">
+          <img src="pin.png" alt="핀"  width="65px" height="50px">
+        </a>
+      </div>
 
-    <div class="pin" data-left="35" data-top="780">
-      <a href="page-thebake.html">
-        <img src="pin.png" alt="핀" width="40px" height="40px">
-      </a>
-    </div>
-
-    <div class="pin" data-left="340" data-top="650">
-      <a href="page-208bluepot.html">
-        <img src="pin.png" alt="핀" width="40px" height="40px">
-      </a>
-    </div>
-  </div>
+      <div class="pin" style="top:620px; left:870px;">
+        <a href="page-208bluepot.html">
+          <img src="pin.png" alt="핀"  width="65px" height="50px">
+        </a>
+      </div>
+  </div> 
 
     
     
@@ -143,3 +98,4 @@
     </script>
 </body>
 </html>
+
