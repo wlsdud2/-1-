@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>포탈 소개</title>
     <link rel="stylesheet" type="text/css" href="standard.css">
     <style>
-
         .container {
             position: relative;
-            width: 500px; /* 이미지의 가로 크기에 맞게 조정 */
-            height: 500px; /* 이미지의 세로 크기에 맞게 조정 */
         }
 
         .num {
@@ -18,8 +16,9 @@
             height: 60px;
             transition: transform 0.5s ease;
         }
+
         .num:hover {
-          transform: scale(1.2);
+            transform: scale(1.2);
         }
 
         .num1 {
@@ -29,7 +28,7 @@
 
         .num2 {
             top: 630px;
-            left:1020px;
+            left: 1020px;
         }
 
         .num3 {
@@ -41,9 +40,9 @@
             top: 640px;
             left: 150px;
         }
-
     </style>
 </head>
+
 <body>
     <img id="title" src="title.png" alt="이미지">
 
@@ -52,50 +51,48 @@
         <button id="button2">근처 음식점</button>
         <button id="button3">교내 카페</button>
         <button id="button4">근처 놀거리</button>
-        <button id="button5">메인 페이지</button>
+        <button id="button5">메인화면</button>
     </nav>
     <br>
     <br>
-   
+
     <div class="container">
         <img src="portal_pic\portalmap.png" alt="Map Image">
-        <img class="num num1" src="portal_pic\num1.png" >
-        <img class="num num2" src="portal_pic\num2.png" >
-        <img class="num num3" src="portal_pic\num3.png" >
+        <img class="num num1" src="portal_pic\num1.png">
+        <img class="num num2" src="portal_pic\num2.png">
+        <img class="num num3" src="portal_pic\num3.png">
         <img class="num num4" src="portal_pic\num4.png">
-        
     </div>
 
-    
     <script>
-        document.getElementById("button1").addEventListener("click", function() {
+        document.getElementById("button1").addEventListener("click", function () {
             window.location.href = "portal.html";
         });
-        document.getElementById("button2").addEventListener("click", function() {
+        document.getElementById("button2").addEventListener("click", function () {
             window.location.href = "restaurant.html";
         });
-        document.getElementById("button3").addEventListener("click", function() {
+        document.getElementById("button3").addEventListener("click", function () {
             window.location.href = "cafe.html";
         });
-        document.getElementById("button4").addEventListener("click", function() {
+        document.getElementById("button4").addEventListener("click", function () {
             window.location.href = "play.html";
         });
-        document.getElementById("button5").addEventListener("click", function() {
+        document.getElementById("button5").addEventListener("click", function () {
             window.location.href = "main.html";
         });
-        document.querySelector(".num1").addEventListener("click", function() {
-          window.location.href = "portal1.html";
-      });
-      document.querySelector(".num2").addEventListener("click", function() {
-          window.location.href = "portal2.html";
-      });
-      document.querySelector(".num3").addEventListener("click", function() {
-          window.location.href = "portal3.html";
-      });
-      document.querySelector(".num4").addEventListener("click", function() {
-          window.location.href = "portal4.html";
-      });
-       
+        document.querySelector(".num1").addEventListener("click", function () {
+            window.location.href = "portal1.html";
+        });
+        document.querySelector(".num2").addEventListener("click", function () {
+            window.location.href = "portal2.html";
+        });
+        document.querySelector(".num3").addEventListener("click", function () {
+            window.location.href = "portal3.html";
+        });
+        document.querySelector(".num4").addEventListener("click", function () {
+            window.location.href = "portal4.html";
+        });
     </script>
 </body>
+
 </html>

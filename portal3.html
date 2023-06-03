@@ -3,70 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>포탈 소개</title>
+    <link rel="stylesheet" type="text/css" href="standard.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            align-items: center;
-            margin: 0;
-            padding: 0;
             text-align: center;
         }
-
-        #title {
-            display: block;
-            width: 100%;
-            height: auto;
-            margin: 0;
-            padding: 0;
-            border: none;
-        }
-
-        #head {
-            display: inline-block;
-            font-size: 70px;
-            font-weight: bold;
-            text-align: center;
-            color: #0E4A84;
-        }
-
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 50px;
-        }
-
-        button {
-            justify-content: center;
-            width: 200px;
-            height: 80px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            margin: 10px;
-            color: white;
-            transition: background-color 0.3s ease;
-        }
-
-        #button1 {
-            background-color: #0E4A84;
-        }
-
-        #button5 {
-            background-color: black;
-            color: white;
-        }
-        img{
+    
+        img {
             width: 200px;
             height: 150px;
         }
-        #arrow{
+    
+        #arrow {
             width: 29px;
             height: 29px;
         }
-     
     </style>
 </head>
 <body>
@@ -87,11 +38,9 @@
 
     <br>
 
-    <div class="button-container">
         <button id="button1">이전</button>
         <button id="button5">메인화면</button>
-    </div>
-    
+
     <script>
         document.getElementById("button1").addEventListener("click", function() {
             window.location.href = "portal.html";

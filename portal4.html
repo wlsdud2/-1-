@@ -1,104 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>포탈 소개</title>
+    <link rel="stylesheet" type="text/css" href="standard.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            align-items: center;
-            margin: 0;
-            padding: 0;
             text-align: center;
         }
 
-        #title {
-            display: block;
-            width: 100%;
-            height: auto;
-            margin: 0;
-            padding: 0;
-            border: none;
-        }
-
-        #head {
-            display: inline-block;
-            font-size: 70px;
-            font-weight: bold;
-            text-align: center;
-            color: #0E4A84;
-        }
-
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 50px;
-        }
-
-        button {
-            justify-content: center;
-            width: 200px;
-            height: 80px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            margin: 10px;
-            color: white;
-            transition: background-color 0.3s ease;
-        }
-
-        #button1 {
-            background-color: #0E4A84;
-        }
-
-        #button5 {
-            background-color: black;
-            color: white;
-        }
-        img{
+        img {
             width: 200px;
             height: 150px;
         }
-        #arrow{
+
+        #arrow {
             width: 29px;
             height: 29px;
         }
-     
     </style>
 </head>
+
 <body>
     <img id="title" src="title.png" alt="이미지">
-<p>1. 후문에 동문회관으로 들어간다</p>
-<img src="portal_pic\portal4_1.png" alt="">
-<br>
-<img id="arrow" src="portal_pic\arrow.png" alt="">
-<br>
-<p>2.동문회관 지하 1층 주차장을 이용한다</p>
-<img src="portal_pic\portal4_2.png" alt=""><br>
+    <p>1. 후문에 동문회관으로 들어간다</p>
+    <img src="portal_pic/portal4_1.png" alt="">
+    <br>
+    <img id="arrow" src="portal_pic/arrow.png" alt="">
+    <br>
+    <p>2. 동문회관 지하 1층 주차장을 이용한다</p>
+    <img src="portal_pic/portal4_2.png" alt=""><br>
 
-<img id="arrow" src="portal_pic\arrow.png" alt=""> <br>
-<p>3.3층에서 내리면 </p>
+    <img id="arrow" src="portal_pic/arrow.png" alt=""> <br>
+    <p>3. 3층에서 내리면</p>
 
-<img id="arrow" src="portal_pic\arrow.png" alt=""> <br>
-<p>한양대 도착!</p>
+    <img id="arrow" src="portal_pic/arrow.png" alt=""> <br>
+    <p>한양대 도착!</p>
     <br>
 
-    <div class="button-container">
-        <button id="button1">이전</button>
-        <button id="button5">메인화면</button>
-    </div>
-    
+    <button id="button1">이전</button>
+    <button id="button5">메인화면</button>
+
     <script>
-        document.getElementById("button1").addEventListener("click", function() {
+        document.getElementById("button1").addEventListener("click", function () {
             window.location.href = "portal.html";
         });
-        document.getElementById("button5").addEventListener("click", function() {
+        document.getElementById("button5").addEventListener("click", function () {
             window.location.href = "main.html";
         });
-       
     </script>
 </body>
+
 </html>
