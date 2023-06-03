@@ -14,14 +14,6 @@ body {
     border: none;
 }
 
-#head {
-    display: inline-block;
-    font-size: 70px;
-    font-weight: bold;
-    text-align: center;
-    color: #0E4A84;
-}
-
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -59,8 +51,55 @@ button {
     background-color: black;
 }
 
+#button6,
+#button7,
+#button8,
+#button9,
+#button10 {
+    width: 100x;
+    height: 40px;
+    background-color: #0E4A84;
+    color: white;
+}
+
 button:hover {
     background-color: #dcdcdc !important;
     color: #0E4A84 !important;
     transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    text-align: left;
+}
+    
+#im {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.5s ease;
+}
+        
+#im:hover {
+    transform: scale(1.2);
+    border-radius: 5px;
 }

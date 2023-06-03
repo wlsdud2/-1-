@@ -1,58 +1,53 @@
-<html>
-    <head>
-        <style>
-            img{
-                width:100px;
-                height:100px;
-            }
-             table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            }
+<!DOCTYPE html>
+<html lang="ko">
 
-        th {
-            background-color: #f2f2f2;
-            padding: 10px;
-            }
-           
-            #button1 {
-            width: 150px;
-            height: 50px;
-            background-color:#0E4A84 ;
-            color: white;
-            text-align:center;
-            font-weight:bold;
-            border:none;
-            margin: auto;
-            display: block;
-          }
-            </style>
+<head>
+    <meta charset="UTF-8">
+    <title>한양대 새내기를 위한 정보</title>
+    <link rel="stylesheet" type="text/css" href="standard.css">
     </head>
 <body>
+    <img id="title" src="title.png" alt="이미지">
+    
+    <nav>
+        <button id="button1">학교 포탈 안내</button>
+        <button id="button2">근처 음식점</button>
+        <button id="button3">교내 카페</button>
+        <button id="button4">근처 놀거리</button>
+        <button id="button5">메인화면</button>
+    </nav>
+    
+    <nav>
+        <button id="button6">전체 보기</button>
+        <button id="button7">한식</button>
+        <button id="button8">양식</button>
+        <button id="button9">일식</button>
+        <button id="button10">중식</button>
+    </nav>
+    <br>
+    <br>
 <table>
     <tr>
         <th>NO</th>
         <th>이름</th>
         <th>운영시간</th>
         <th>장소</th>
-        <th>예약 가능 여부</th>
+        <th>예약(O,X)</th>
         <th>추천메뉴</th>
         <th>이미지</th>
     </tr>
     <tr>
         <td>1</td>
         <td>끄트머리집</td>
-            <td>매일 11:00-21:30 (브레이크 타임 15:00-16:30)</td>
+            <td>매일 11:00-21:30<br>(브레이크 타임 15:00-16:30)</td>
             <td><a href="https://map.naver.com/v5/search/%EB%81%84%EB%9C%A8%EB%A8%B8%EB%A6%AC/place/1540591688?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=15,0,0,0,dh">서울 성동구 마조로3길 8 1층</a></td>
-            <td><a href="tel:0507-1326-8574"></a>전화 예약</td>
+            <td><a href="tel:0507-1326-8574">전화 예약</a></td>
             <td>
                 <ul>
                 <li>돼지김치구이</li>
             </ul>
             </td>
-            <td><img id="im" src="rest_pic\끄트머리.jpg" alt=""></td>
+            <td><img id="im" src="rest_pic/끄트머리.jpg" alt=""></td>
     </tr>
     <tr>
         <td>2</td>
@@ -66,12 +61,12 @@
             <li>한우대창</li>
         </ul>
         </td>
-        <td><img id="im" src="rest_pic\제일곱창.jpg" alt=""></td>
+        <td><img id="im" src="rest_pic/제일곱창.jpg" alt=""></td>
     </tr>
     <tr>
         <td>3</td>
         <td>이돈집</td>
-        <td>매일 11:00-22:00(브레이크 타임 15:00-16:30)<br>매주 일요일 정기휴무</td>
+        <td>매일 11:00-22:00<br>(브레이크 타임 15:00-16:30)<br>매주 일요일 정기휴무</td>
         <td><a href="https://map.naver.com/v5/search/%EC%9D%B4%EB%8F%88%EC%A7%91/place/1282426797?c=13,0,0,0,dh&isCorrectAnswer=true">서울 성동구 마조로3길 7 1층</a></td>
         <td>X</td>
         <td>
@@ -80,18 +75,40 @@
             <li>한근찌개</li>
         </ul>
         </td>
-        <td><img id="im" src="rest_pic\이돈집.jpg" alt=""></td>
+        <td><img id="im" src="rest_pic/이돈집.jpg" alt=""></td>
     </tr>
     
 </table>
-<br>
-<br>
-<div class="button-container">
-    <button id="button1">메인으로 돌아가기</button></div>
-    <script>
-        // JavaScript 
-        document.getElementById("button1").addEventListener("click", function() {
+    <script>        
+        document.getElementById("button1").addEventListener("click", function () {
+            window.location.href = "portal.html";
+        });
+        document.getElementById("button2").addEventListener("click", function () {
+            window.location.href = "restaurant.html";
+        });
+        document.getElementById("button3").addEventListener("click", function () {
+            window.location.href = "cafe.html";
+        });
+        document.getElementById("button4").addEventListener("click", function () {
+            window.location.href = "play.html";
+        });
+        document.getElementById("button5").addEventListener("click", function () {
             window.location.href = "main.html";
+        });
+        document.getElementById("button6").addEventListener("click", function () {
+            window.location.href = "restaurant.html";
+        });
+        document.getElementById("button7").addEventListener("click", function () {
+            window.location.href = "korean.html";
+        });
+        document.getElementById("button8").addEventListener("click", function () {
+            window.location.href = "western.html";
+        });
+        document.getElementById("button9").addEventListener("click", function () {
+            window.location.href = "japanese.html";
+        });
+        document.getElementById("button10").addEventListener("click", function () {
+            window.location.href = "chinese.html";
         });
         </script>
 </body>

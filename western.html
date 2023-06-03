@@ -1,50 +1,46 @@
-<html>
-    <head>
-        <style>
-            img{
-                width:100px;
-                height:100px;
-            }
-             table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            }
+<!DOCTYPE html>
+<html lang="ko">
 
-        th {
-            background-color: #f2f2f2;
-            padding: 10px;
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>한양대 새내기를 위한 정보</title>
+    <link rel="stylesheet" type="text/css" href="standard.css">
+</head>
 
-            #button1 {
-            width: 150px;
-            height: 50px;
-            background-color:#0E4A84 ;
-            color: white;
-            text-align:center;
-            font-weight:bold;
-            border:none;
-            margin: auto;
-            display: block;
-          }
-            </style>
-    </head>
 <body>
+    <img id="title" src="title.png" alt="이미지">
+
+    <nav>
+        <button id="button1">학교 포탈 안내</button>
+        <button id="button2">근처 음식점</button>
+        <button id="button3">교내 카페</button>
+        <button id="button4">근처 놀거리</button>
+        <button id="button5">메인화면</button>
+    </nav>
+
+    <nav>
+        <button id="button6">전체 보기</button>
+        <button id="button7">한식</button>
+        <button id="button8">양식</button>
+        <button id="button9">일식</button>
+        <button id="button10">중식</button>
+    </nav>
+    <br>
+    <br>
 <table>
     <tr>
         <th>NO</th>
         <th>이름</th>
         <th>운영시간</th>
         <th>장소</th>
-        <th>예약 가능 여부</th>
+        <th>예약(O,X)</th>
         <th>추천메뉴</th>
         <th>이미지</th>
     </tr>
     <tr>
         <td>1</td>
         <td>봄의 정원</td>
-            <td>평일 11:30-21:30 (브레이크 타임 15:00-17:00, 주말 노브레이크) <br> 월요일 휴무</td>
+            <td>평일 11:30-21:30<br>(브레이크 타임 15:00-17:00, 주말 노브레이크)<br>월요일 휴무</td>
             <td><a href="https://map.naver.com/v5/search/%EB%B4%84%EC%9D%98%EC%A0%95%EC%9B%90/place/1802840257?placePath=%3Fentry=pll&c=15,0,0,0,dh">서울 성동구 마조로7길 13 지층 봄의정원 왕십리점</a></td>
             <td><a href="https://map.naver.com/v5/search/%EB%B4%84%EC%9D%98%EC%A0%95%EC%9B%90/place/1802840257?placePath=%3Fentry=pll&c=15,0,0,0,dh">네이버 예약</a></td>
             <td>
@@ -53,12 +49,12 @@
                 <li>본메로우 라구 파스타</li>
             </ul>
             </td>
-            <td><img id="im" src="rest_pic\봄의 정원.jpg" alt=""></td>
+            <td><img id="im" src="rest_pic/봄의 정원.jpg" alt=""></td>
     </tr>
     <tr>
         <td>2</td>
         <td>베네토피자앤펍</td>
-            <td>평일 11:30-23:0 (라스트오더 22:00) <br> 일요일 휴무</td>
+            <td>평일 11:30-23:00<br>(라스트오더 22:00)<br>일요일 휴무</td>
             <td><a href="https://map.naver.com/v5/entry/place/1005105047?lng=127.0396216&lat=37.5584691&placePath=%2F&entry=plt&c=15,0,0,0,dh">서울 성동구 마조로3길 7-1</a></td>
             <td>X</td>
             <td>
@@ -67,12 +63,12 @@
                 <li>훈제삼겹 로제 파스타</li>
             </ul>
             </td>
-            <td><img id="im" src="rest_pic\베네토.jpg" alt=""></td>
+            <td><img id="im" src="rest_pic/베네토.jpg" alt=""></td>
     </tr>
     <tr>
         <td>3</td>
         <td>다이너 왕십리점</td>
-            <td>평일 10:30-22:00 (브레이크 타임 15:00-17:00) </td>
+            <td>평일 10:30-22:00<br>(브레이크 타임 15:00-17:00)</td>
             <td><a href="https://map.naver.com/v5/entry/place/1212006015?c=15,0,0,0,dh">서울 성동구 왕십리광장로 17 비트플렉스몰 3층 다이너</a></td>
             <td>X</td>
             <td>
@@ -81,18 +77,41 @@
                 <li>안심 스테이크</li>
             </ul>
             </td>
-            <td><img id="im" src="rest_pic\다이너.jpg" alt=""></td>
+            <td><img id="im" src="rest_pic/다이너.jpg" alt=""></td>
     </tr>
 </table>
-<br>
-<br>
-<div class="button-container">
-    <button id="button1">메인으로 돌아가기</button></div>
-    <script>
-        // JavaScript 
-        document.getElementById("button1").addEventListener("click", function() {
-            window.location.href = "main.html";
-        });
-        </script>
+<script>
+    document.getElementById("button1").addEventListener("click", function () {
+        window.location.href = "portal.html";
+    });
+    document.getElementById("button2").addEventListener("click", function () {
+        window.location.href = "restaurant.html";
+    });
+    document.getElementById("button3").addEventListener("click", function () {
+        window.location.href = "cafe.html";
+    });
+    document.getElementById("button4").addEventListener("click", function () {
+        window.location.href = "play.html";
+    });
+    document.getElementById("button5").addEventListener("click", function () {
+        window.location.href = "main.html";
+    });
+    document.getElementById("button6").addEventListener("click", function () {
+        window.location.href = "restaurant.html";
+    });
+    document.getElementById("button7").addEventListener("click", function () {
+        window.location.href = "korean.html";
+    });
+    document.getElementById("button8").addEventListener("click", function () {
+        window.location.href = "western.html";
+    });
+    document.getElementById("button9").addEventListener("click", function () {
+        window.location.href = "japanese.html";
+    });
+    document.getElementById("button10").addEventListener("click", function () {
+        window.location.href = "chinese.html";
+    });
+</script>
 </body>
+
 </html>

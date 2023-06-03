@@ -1,53 +1,46 @@
-<html>
-    <head>
-        <style>
-            img{
-                width:100px;
-                height:100px;
-            }
-            table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            }
+<!DOCTYPE html>
+<html lang="ko">
 
-        th {
-            background-color: #f2f2f2;
-            padding: 10px;
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>한양대 새내기를 위한 정보</title>
+    <link rel="stylesheet" type="text/css" href="standard.css">
+</head>
 
-        td {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;}
-            #button1 {
-            width: 150px;
-            height: 50px;
-            background-color:#0E4A84 ;
-            color: white;
-            text-align:center;
-            font-weight:bold;
-            border:none;
-            margin: auto;
-            display: block;
-          }
-            </style>
-    </head>
 <body>
+    <img id="title" src="title.png" alt="이미지">
+
+    <nav>
+        <button id="button1">학교 포탈 안내</button>
+        <button id="button2">근처 음식점</button>
+        <button id="button3">교내 카페</button>
+        <button id="button4">근처 놀거리</button>
+        <button id="button5">메인화면</button>
+    </nav>
+
+    <nav>
+        <button id="button6">전체 보기</button>
+        <button id="button7">한식</button>
+        <button id="button8">양식</button>
+        <button id="button9">일식</button>
+        <button id="button10">중식</button>
+    </nav>
+    <br>
+    <br>
 <table>
     <tr>
         <th>NO</th>
         <th>이름</th>
         <th>운영시간</th>
         <th>장소</th>
-        <th>예약 가능 여부</th>
+        <th>예약(O,X)</th>
         <th>추천메뉴</th>
         <th>이미지</th>
     </tr>
     <tr>
         <td>1</td>
         <td>돈까스 전원</td>
-        <td>평일 11:20-20:30 (브레이크 타임 15:00-17:00) <br> 토요일 11:20-15:00</td>
+        <td>평일 11:20-20:30<br>(브레이크 타임 15:00-17:00)<br>토요일 11:20-15:00</td>
         <td><a href="https://naver.me/5PS2RjWv">서울 성동구 왕십리로24길 13 돈까스전원</a></td>
         <td>X</td>
         <td>
@@ -55,7 +48,7 @@
             <li>안심돈가스 정식</li>
         </ul>
         </td>
-        <td><img id="im" src="rest_pic\돈까스 전원.jpg" alt=""></td>
+        <td><img id="im" src="rest_pic/돈까스 전원.jpg" alt=""></td>
     </tr>
     <tr>
         <td>2</td>
@@ -69,12 +62,12 @@
             <li>수작스시</li>
         </ul>
         </td>
-        <td><img id="im" src="rest_pic\스시도쿠.jpg" alt=""></td>
+        <td><img id="im" src="rest_pic/스시도쿠.jpg" alt=""></td>
     </tr>
     <tr>
         <td>3</td>
         <td>멘푸라</td>
-            <td>평일 11:00-20:00 (브레이크 타임 15:00-16:30) </td>
+            <td>평일 11:00-20:00<br>(브레이크 타임 15:00-16:30)</td>
             <td><a href="https://map.naver.com/v5/entry/place/1720225160?lng=127.0401563&lat=37.5585545&placePath=%2Fhome&entry=plt&c=15,0,0,0,dh">서울 성동구 마조로3길 6 1층 멘푸라</a></td>
             <td>X</td>
             <td>
@@ -83,18 +76,41 @@
                 <li>카레멘</li>
             </ul>
             </td>
-            <td><img id="im" src="rest_pic\멘푸라.jpg" alt=""></td>
+            <td><img id="im" src="rest_pic/멘푸라.jpg" alt=""></td>
     </tr>
 </table>
-<br>
-<br>
-<div class="button-container">
-    <button id="button1">메인으로 돌아가기</button></div>
-    <script>
-        // JavaScript 
-        document.getElementById("button1").addEventListener("click", function() {
-            window.location.href = "main.html";
-        });
-        </script>
+<script>
+    document.getElementById("button1").addEventListener("click", function () {
+        window.location.href = "portal.html";
+    });
+    document.getElementById("button2").addEventListener("click", function () {
+        window.location.href = "restaurant.html";
+    });
+    document.getElementById("button3").addEventListener("click", function () {
+        window.location.href = "cafe.html";
+    });
+    document.getElementById("button4").addEventListener("click", function () {
+        window.location.href = "play.html";
+    });
+    document.getElementById("button5").addEventListener("click", function () {
+        window.location.href = "main.html";
+    });
+    document.getElementById("button6").addEventListener("click", function () {
+        window.location.href = "restaurant.html";
+    });
+    document.getElementById("button7").addEventListener("click", function () {
+        window.location.href = "korean.html";
+    });
+    document.getElementById("button8").addEventListener("click", function () {
+        window.location.href = "western.html";
+    });
+    document.getElementById("button9").addEventListener("click", function () {
+        window.location.href = "japanese.html";
+    });
+    document.getElementById("button10").addEventListener("click", function () {
+        window.location.href = "chinese.html";
+    });
+</script>
 </body>
+
 </html>
