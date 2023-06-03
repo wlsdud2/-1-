@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     align-items: center;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -59,7 +60,6 @@ button {
     width: 100x;
     height: 40px;
     background-color: #0E4A84;
-    color: white;
 }
 
 button:hover {
@@ -73,6 +73,7 @@ table {
     border-collapse: collapse;
     font-family: Arial, sans-serif;
     text-align: center;
+    table-layout: fixed;
 }
 
 th {
