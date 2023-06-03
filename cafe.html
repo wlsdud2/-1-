@@ -6,8 +6,6 @@
     <link rel="stylesheet" type="text/css" href="standard.css">
     <style>
 
-
-
     .map-container {
       position: relative;
       width: 600px; 
@@ -17,6 +15,7 @@
     .pin {
       position: absolute;
       cursor: pointer;
+      transition: 1.0s;
     }
 
     h2 {
@@ -24,7 +23,6 @@
       font-weight: bold;
     }
 
-    .pin { transition: 1.0s; }
     .pin:hover img, .pin a:focus img {
       transform: scale(1.2);
     }
@@ -50,33 +48,31 @@
  <br>
  
  <div class="map-container">
-  <img class="map" src="cafe_pic\cafemap.png" alt="지도 이미지">
+  <img class="map" src="cafe_pic/cafemap.png" alt="지도 이미지">
     <div class="pin" style="top:320px; left:464px;">
       <a href="page-703bluepot.html">
-        <img src="cafe_pic\pin.png" alt="핀" width="65px" height="50px">
+        <img src="cafe_pic/pin.png" alt="핀" width="65px" height="50px">
       </a>
     </div>
 
     <div class="pin" style="top:415px; left:420px;">
       <a href="page-tiamo.html">
-        <img src="cafe_pic\pin.png" alt="핀" width="65px" height="50px">
+        <img src="cafe_pic/pin.png" alt="핀" width="65px" height="50px">
       </a>
     </div>
 
     <div class="pin" style="top:600px; left:360px;">
       <a href="page-thebake.html">
-        <img src="cafe_pic\pin.png" alt="핀"  width="65px" height="50px">
+        <img src="cafe_pic/pin.png" alt="핀"  width="65px" height="50px">
       </a>
     </div>
 
     <div class="pin" style="top:500px; left:580px;">
       <a href="page-208bluepot.html">
-        <img src="cafe_pic\pin.png" alt="핀"  width="65px" height="50px">
+        <img src="cafe_pic/pin.png" alt="핀"  width="65px" height="50px">
       </a>
     </div>
 </div> 
-
-    
     
     <script>
         document.getElementById("button1").addEventListener("click", function() {
